@@ -38,6 +38,7 @@ echo ($boolean? 'true': 'false');
 
 echo "<br>";
 
+
 $float=5.5;
 echo "the float value is ". $float . "<br>";
 
@@ -46,6 +47,11 @@ $num1=40;
 $sum=$num+$num1;
 echo "the sum of two number is ". $sum;
 
+echo "<br>";
+$number=10;
+$number1=8;
+$sub=$number-$number1;
+echo "the substraction is ". $sub ."<br>";
 
 
 ?>
