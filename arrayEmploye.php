@@ -12,7 +12,7 @@
 </head>
 <body>
 <?php
-$employee=[
+$employees=[
     [
         "name"=>"ritwik",
         "position"=>"Developer",
@@ -44,7 +44,7 @@ $employee=[
     </thead>
     <tbody>
     <?php
-     foreach($employee as $employee){
+     foreach($employees as $employee){
         ?>
             <tr>
                 <td><?php echo $employee["name"]?></td>

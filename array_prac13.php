@@ -5,16 +5,16 @@ $students = [
     ["name" => "raja",   "marks" => 70],
     ["name" => "kalu",   "marks" => 69],
 ];
-// ✅ Display all students
+//  Display all students;
 foreach ($students as $student) {
     echo "Name : " . $student["name"] . " ---- Marks : " . $student["marks"] . "<br>";
 }
 echo "<hr>";
 
-// ✅ Add a new student
+//  Add a new student;
 $students[] = ["name" => "kana", "marks" => 89];
 
-// ✅ Update marks of 'raja'
+//  Update marks of raja;
 foreach ($students as &$student) {
     if ($student["name"] == "raja") {
         $student["marks"] = 75;
