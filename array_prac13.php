@@ -22,7 +22,7 @@ foreach ($students as &$student) {
 }
 unset($student); // to break reference
 
-// ✅ Display all students
+//  Display all students
 foreach ($students as $student) {
     echo "Name : " . $student["name"] . " ---- Marks : " . $student["marks"] . "<br>";
 }
