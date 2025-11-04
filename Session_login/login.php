@@ -1,3 +1,20 @@
+<?php
+ session_start();
+  $auser="ritwik";
+  $apassword="1234";
+  if (isset($_POST['ok'])) {
+   $name=$_POST['name'];
+   $pwd=$_POST['pwd'];
+  if ($name==$auser && $pwd==$apassword) {
+     $_SESSION['name']=$name;
+    header("location: dashboard.php");
+    }else {
+    echo "invailed user ";
+  }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,22 +51,7 @@
           <button type="submit" class="btn btn-success" name="ok">Login</button>
          </form>
 
-                            <?php
-                            session_start();
-                            $auser="ritwik";
-                            $apassword="1234";
-                            if (isset($_POST['ok'])) {
-                                $name=$_POST['name'];
-                                $pwd=$_POST['pwd'];
-                                if ($name==$auser && $pwd==$apassword) {
-                                    $_SESSION['name']=$name;
-                                    header("location: dashboard.php");
-                                }else {
-                                    echo "invailed user ";
-                                }
-                            }
-
-                            ?>
+                            
  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>

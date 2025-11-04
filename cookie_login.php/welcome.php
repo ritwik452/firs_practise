@@ -1,11 +1,10 @@
 <?php
 session_start();
-if (!isset($_SESSION['name'])) {
-    header("Location: login.php");
+if (!isset($_COOKIE['user'])) {
+    header("location: Login.php");
+    exit();
 }
-echo $_SESSION['name'];
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,16 +15,19 @@ echo $_SESSION['name'];
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
-<title>Title</title>
+<title>Welcome Page</title>
 </head>
 <body>
-<h1>This is dash board Page</h1>
-Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-Unde molestiae ullam iusto illo aspernatur nulla cupiditate. 
-Expedita fugit saepe quis quasi nam quidem quas, ipsum deleniti, atque unde laboriosam eaque!
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat provident explicabo dicta fuga. 
-Autem voluptatibus recusandae, quos laboriosam accusantium libero.</p>
-<a href="logout.php">logout</a>
+    <h1>Welcome Page</h1>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    Voluptates perferendis exercitationem minus aspernatur recusandae nemo aut? 
+    Amet quo vitae quis illum ipsam, nesciunt magni? 
+    Similique sequi asperiores ex assumenda. 
+    Omnis iste laboriosam ex quia consequuntur hic sunt temporibus aliquam vitae aut, 
+    deleniti perferendis quidem ipsam nam dicta impedit qui possimus!
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatibus nam distinctio. 
+    Velit recusandae quisquam optio quae neque ut repellendus?</p>
+    <a href="logout.php">Logout</a>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
