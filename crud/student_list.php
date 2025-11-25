@@ -16,7 +16,7 @@
     <h3>Student List</h3>
     <a href="studentAdd.php" class="btn btn-primary">Add Student</a>
    <table class="table table-striped">
-      <thead>
+      <thead >
           <tr>
             <th scope="col">#</th>
             <th scope="col">Name</th>
