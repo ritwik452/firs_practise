@@ -15,7 +15,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header bg-primary text-white">
-               <h3>Student Form</h3>
+               <h3>User</h3>
             </div>
             <div class="card-body">
                 <form action="" method="post">
@@ -27,15 +27,8 @@
                     <label for="">Email</label>
                     <input type="emial" name="email" class="form-control" placeholder="enter email">
                   </div>
-                  <div class="form-group">
-                    <label for="">City</label>
-                    <input type="text" name="city" class="form-control" placeholder="enter city">
-                  </div>
-                  <div class="form-group">
-                    <label for="">Phone</label>
-                    <input type="text" name="phone" class="form-control" placeholder="enter phone number">
-                  </div>
-                  <button type="submit" name="add" class="btn btn-success">Add Student</button>
+              
+                <button type="submit" name="add" class="btn btn-success">Add Student</button>
 
                 </form>
                 <?php
