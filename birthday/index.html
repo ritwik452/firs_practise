@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎉 Happy Birthday My Nila 🎉</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3, #fad0c4);
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 60px;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff00cc, 0 0 40px #ff0066;
+  }
+
+  p {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+
+  @keyframes glow {
+    from { text-shadow: 0 0 10px #fff, 0 0 20px #ff99cc, 0 0 30px #ff0066; }
+    to { text-shadow: 0 0 20px #fff, 0 0 30px #ff00cc, 0 0 40px #ff3399; }
+  }
+
+  /* Confetti */
+  .confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    opacity: 0.8;
+    animation: fall 3s linear infinite;
+  }
+
+  @keyframes fall {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+  }
+
+  audio {
+    display: none;
+  }
+</style>
+</head>
+<body>
+  <h1>🎂 Happy Birthday My Nila 🎂</h1>
+  <p>Wishing you a day full of love, smiles and endless happiness 💖</p>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    // Confetti Generator
+    const colors = ['#ff5f6d', '#ffc371', '#ff9a9e', '#fad0c4', '#f6d365', '#fda085'];
+    for (let i = 0; i < 60; i++) {
+      const confetti = document.createElement('div');
+      confetti.classList.add('confetti');
+      confetti.style.left = Math.random() * 100 + 'vw';
+      confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+      confetti.style.animationDuration = 2 + Math.random() * 3 + 's';
+      confetti.style.width = confetti.style.height = Math.random() * 8 + 5 + 'px';
+      document.body.appendChild(confetti);
+    }
+  </script>
+</body>
+</html>
