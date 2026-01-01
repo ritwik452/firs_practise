@@ -15,3 +15,5 @@ class Dog extends Animal {
         return "Dog barks";
     }
 }
+$d=new dog();
+echo $d->sound();
